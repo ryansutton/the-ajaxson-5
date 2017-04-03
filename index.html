@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The AJAXson 5</title>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="request-gif.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>The AJAXson 5</h1>
+    <header class="jumbotron"><h1 class="header">Ajaxson 5</h1></header>
 
-    <form id="form-gif-request" />
-        <label>What kind of Jackson 5 related gif do you want?</label>
-        <input name="tag" type="text"/>
-        <input type="submit" value="Get my Gif!" />
+    <form id="form-gif-request"/>
+        <div class="panel panel-default input-field">
+            <label class="panel">What kind of Jackson 5 related gif do you want?</label>
+
+            <input name="tag" type="text"/>
+        </div>
+        <br>
+        <div class="panel panel-default input-field">
+            <label>Prove you are not a robot by answering this riddle:</label>
+
+            <input id="verify" type="text" required>Jacksons are better than 1.</input>
+            <br>
+            <input type="submit" class="btn btn-primary" value="Get my Gif!" />
+        </div>
     </form>
 
     <img id="gif" src="" hidden="true"/>

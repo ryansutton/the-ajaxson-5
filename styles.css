@@ -1,0 +1,16 @@
+.header {
+    text-align: center;
+}
+
+.input-field {
+    text-align: center;
+}
+
+#gif {
+    display: block;
+    margin: 0 auto;
+}
+
+#feedback {
+    text-align: center;
+}
